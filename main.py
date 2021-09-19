@@ -109,7 +109,28 @@ if p2:
 
 #3
 p3 = True
+
 if p3:
-    
+
+    class Car():
+        def __init__(self, company, model, year, owner, color, hp):
+            self.company = company
+            self.model = model
+            self.year = year
+            self.owner = owner
+            self.color = color
+            self.hp = hp
+        def describe_car(self):
+            if self.hp >= 600:
+                print(f'This {self.year} {self.company} {self.model} owned by {self.owner} is an exquisitely exquisite car due to its raw horsepower of {self.hp} and the acuteness of the {self.color} hue on it\'s main frame.')
+            else:
+                print(f'This {self.year} {self.company} {self.model} owned by {self.owner} is an exquisitely exquisite car due to its respectable horsepower of {self.hp} and the acuteness of the {self.color} hue on it\'s main frame.')
+    car1 = Car('Ferrari', 'LaFerrari', 2015, 'Kobi Kahn', 'red', 949)
+    car2 = Car('Toyota', 'Supra', 2022, 'Kobi Kahn', 'orange', 382)
+    car3 = Car('Lamborghini', 'Huracan EVO', 2021, 'Kobi Kahn', 'blue', 630)
+    car1.describe_car()
+    car2.describe_car()
+    car3.describe_car()
+
 
 
